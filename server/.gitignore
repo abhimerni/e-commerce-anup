@@ -1,0 +1,7 @@
+#Ignore MAC system file
+.DS_store
+
+node_modules
+*.txt
+.env
+.sass-cache
