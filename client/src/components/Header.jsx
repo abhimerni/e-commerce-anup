@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div className="headerOne bg-gray-800">
         <div className="logo">
-          <span class="custom-logo text-4xl ml-4">Abhishek</span>
+          <span className="custom-logo text-4xl ml-4"><Link to='/'>Abhishek</Link></span>
         </div>
         <div className="hamburger" onClick={() => setOpen(!open)}>
           <div className="line"></div>
@@ -20,16 +20,16 @@ const Header = () => {
           }
         >
           <div className="navBar">
-            <div className="navlink"><Link to='/login'>Login</Link></div>
+            <div className="navlink" onClick={() => setOpen(false)}><Link to='/login'>Login</Link></div>
             <div className="navlink"><Link to='/register'>Register</Link></div>
             <div className="navlink">news</div>
             <div className="navlink">
-              <i class="fa fa-search" aria-hidden="true"></i>
+              <i className="fa fa-search" aria-hidden="true"></i>
             </div>
           </div>
           <div className="sociallinkContainer">
             <div className="socialLink">
-              <i class="fa fa-instagram"></i>
+              <i className="fa fa-instagram"></i>
             </div>
             <div className="socialLink">
               <svg
@@ -41,16 +41,16 @@ const Header = () => {
               </svg>
             </div>
             <div className="socialLink">
-              <i class="fa fa-snapchat"></i>
+              <i className="fa fa-snapchat"></i>
             </div>
             <div className="socialLink">
-              <i class="fa fa-facebook"></i>
+              <i className="fa fa-facebook"></i>
             </div>
             <div className="socialLink">
-              <i class="fa fa-twitter"></i>
+              <i className="fa fa-twitter"></i>
             </div>
             <div className="socialLink">
-              <i class="fa fa-youtube"></i>
+              <i className="fa fa-youtube"></i>
             </div>
           </div>
         </div>
